@@ -1,0 +1,3 @@
+dash==2.8.1
+gunicorn==20.1.0
+sydraw==0.0.1
