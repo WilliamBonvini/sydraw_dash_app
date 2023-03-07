@@ -1,11 +1,10 @@
 import pandas as pd
 from dash import Dash, dcc, html, Input, Output
 import plotly.express as px
-from sydraw.package.sydraw import synth
-
-
+from sydraw import synth
 app = Dash(__name__)
 
+server = app.server
 
 app.layout = html.Div([
     dcc.Graph(id="scatter-plot",
@@ -65,7 +64,7 @@ app.layout = html.Div([
         html.P("Outliers percentage"),
         dcc.Slider(
                 id='outliers_perc',
-                min=0.1, max=1, step=0.10,
+                min=0, max=1, step=0.10,
                 marks={0: '0.0',
                        0.1: '0.1',
                        0.2: '0.2',
@@ -128,11 +127,15 @@ def update_bar_chart(nm, n, noise_perc, outliers_perc, radius):
         color="label",
         range_x=(-2.5, 2.5),
         range_y=(-2.5, 2.5),
-    template='simple_white')
+        template='simple_white')
     fig.update_coloraxes(showscale=False)
     fig.update_traces(marker={'size': 3})
 
     return fig
+
+
+def run_demo():
+    app.run_server(debug=True)
 
 
 if __name__ == "__main__":

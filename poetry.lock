@@ -834,14 +834,14 @@ files = [
 
 [[package]]
 name = "sydraw"
-version = "0.0.1"
+version = "0.0.3"
 description = "A python library that helps you create synthetic 2D point clouds dataset"
 category = "main"
 optional = false
 python-versions = ">=3.9.5,<3.12"
 files = [
-    {file = "sydraw-0.0.1-py3-none-any.whl", hash = "sha256:5bc4925abbc2e8484abd58dbd1e831af8d7f41b4ea90d2682745c827f74005b3"},
-    {file = "sydraw-0.0.1.tar.gz", hash = "sha256:0a13086be87c46a002b93d835957828712aa5b111f5a2c7f7fae7144f0610cc5"},
+    {file = "sydraw-0.0.3-py3-none-any.whl", hash = "sha256:ce855f041acae2954a299276bfa71c875f147cf870da745f73f156930281885e"},
+    {file = "sydraw-0.0.3.tar.gz", hash = "sha256:d6c1b1438f97d07ac182ca357dcf15d23bc80b847bf17226d9890191be3b8cbd"},
 ]
 
 [package.dependencies]
@@ -901,4 +901,4 @@ testing = ["big-O", "flake8 (<5)", "jaraco.functools", "jaraco.itertools", "more
 [metadata]
 lock-version = "2.0"
 python-versions = ">=3.9.5, <3.12"
-content-hash = "f8769f4499f9d77e2ea3f30a6d8b5a42aca5e401beec68649e8b2cb391ef5830"
+content-hash = "439f44815094523e0aee1aa6c6cce9102a50762efb43218826f01751b3366f13"
